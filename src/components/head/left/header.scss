@@ -1,0 +1,13 @@
+.headleft{
+    flex-basis: 50%;
+    padding-top: 70px;
+    &__title{
+        font-size: 80px;
+        font-weight: 900;
+    }
+    p{
+        font-size: 18px;
+        margin-bottom: 66px;
+        margin-top: 14px;
+    }
+}

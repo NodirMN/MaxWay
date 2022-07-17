@@ -1,0 +1,98 @@
+.header{
+    padding: 23px 0px;
+    .container{
+        display: flex;
+        align-items: center;
+    }
+    &__menu{
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+    a {
+        margin: 0px 20px;
+        font-size: 14px;
+        color: #222124;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    &__contact{
+        padding-left: 38px;
+        position: relative;
+        display: flex;
+        a {
+            color: #fff;
+        }
+        &::before{
+            content: '';
+            background-color: #800A7A;
+            position: absolute;
+            left: 0;
+            top: -40px;
+            height: 150vh;
+            width: 50vw;
+            z-index: -1;
+        }
+    }
+    &__phone{
+        display: flex;
+        align-items: center;
+        padding-right: 40px;
+        border-right: 1px solid rgba(255,255,255,255);
+        svg {
+            margin-right: 16px;
+        }
+        &--number{
+            display: flex;
+            flex-direction: column;
+        }
+        &--top{
+            font-size: 12px;
+        }
+        &--bottom{
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+    &__card{
+        display: flex;
+        align-items: center;
+        padding-left: 40px;
+        &--count{
+            position: relative;
+            &::before{
+                content: attr(data-count);
+                display: flex;
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: #F1B301;
+                border: 2px solid #800A7A;
+                align-items: center;
+                font-weight: 600;
+                justify-content: center;
+                font-size: 10px;
+                box-sizing: border-box;
+                top: -7px;
+                right: 5px;
+            }
+        }
+        svg{
+            margin-right: 16px;
+        }
+        &--info{
+            display: flex;
+            flex-direction: column;
+        }
+            &--top{
+                font-size: 24px;
+                font-weight: 700;
+                }
+                &--bottom{
+                font-size: 12px;
+        }
+    }
+}

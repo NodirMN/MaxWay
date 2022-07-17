@@ -1,0 +1,34 @@
+@import '../var.scss';
+.filtr{
+    border-top: 1px solid #979797;
+    margin-top: 80px;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    // @include bg();
+    button {
+        &.active{
+            background-color:$yellow;
+            color: #fff;
+        }
+        background: unset;
+        padding: 15px 27px;
+        border-radius: 27px;
+        align-items: center;
+        display: flex;
+        font-size: 20px;
+        margin-bottom: 105px;
+        &:hover{
+            background-color: $yellow;
+        }
+        img {
+            margin-right: 16px;
+            
+        }
+    }
+    .filtr__more{
+        padding: 15px 27px;
+        margin-left: auto;
+        background-color: #F5F5F5;
+    }
+}
