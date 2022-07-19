@@ -1,0 +1,54 @@
+@import './var.scss';
+@media (max-width:1024px) {
+    .container{
+        padding: 0px 15px;
+    }
+    .row{
+        margin: unset;
+    }
+    .head .container .bigburger {
+    right: -11%;
+    width: 69%;
+    }
+    .headleft__title {
+    font-size: 66px;
+    }
+    div.headleft{
+        flex-basis: 50%;
+    }
+    .filtr button{
+        padding: 13px 22px;
+    }
+    div.headleft p {
+    font-size: 18px;
+    margin-bottom: 16px;
+    margin-top: 43px;
+}
+img.appmobile__line {
+    right: -26%;
+}
+img.appmobile__img {
+    right: -132px;
+}
+}
+
+
+
+
+@media (max-width:768px) {
+    div.filtr{
+        padding-bottom: 11px;
+        overflow: scroll;
+    }
+    div.filtr button{
+        margin-bottom: 20px;
+    } 
+}
+@media (max-width:425px) {
+    
+}
+
+@media (max-width:375px) {
+    
+}
+

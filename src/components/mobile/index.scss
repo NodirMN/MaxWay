@@ -1,0 +1,46 @@
+@import '../var.scss';
+.appmobile{
+    background-color: $violet;
+    padding-top: 75px;
+    padding-bottom: 95px;
+    position: relative;
+    &__box{
+        padding-top: 88px;
+        overflow: hidden;
+    }
+    &__img{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    &__line{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: 0;
+    }
+    &__title{
+        font-size: 52px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 63px;
+    }
+    &__links{
+        display: flex;
+        align-items: center;
+        a{
+            border: 1px solid rgba(255, 255, 255, 0.292941);
+            border-radius: 46px;
+            padding: 17px 30px;
+            display:inline-block;
+            margin-right: 30px;
+            &:hover{
+                background-color: #fff;
+                img{
+                    filter: invert(1);
+                }
+            } 
+        }
+    }
+}
