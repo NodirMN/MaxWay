@@ -4,9 +4,11 @@ import Card from "./card";
 const HeadLeft = () =>{
     return (
         <div className="headleft">
+            <div className="headleft__box">
             <div className="headleft__title">Siz izlagan mazzali ta’mlar</div>
             <p>When an unknown printer took a galley of type <br />
                 scrambled it to make a type specimen </p>
+            </div>
                 <div className="row">
                     <div className="col-6">
                         <Card 

@@ -39,11 +39,80 @@ img.appmobile__img {
     div.filtr{
         padding-bottom: 11px;
         overflow: scroll;
+        margin-top: 0px;
     }
     div.filtr button{
         margin-bottom: 20px;
-    } 
+    }
+    // div.card{
+    //     display: none;
+    // }
+    .head .container img.bigburger {
+    position:relative;
+    margin-top: 0;
+    }
+    .head .container >.row {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    ul.header__menu,
+    div.header__contact{
+        display: none;
+    }
+    div.headleft__box{
+        @include fb(100%);
+        margin-top: -256px;
+        padding: 0;
+        background-color: $violet;
+        color: #fff;
+        padding: 167px 70px 46px;   
+    }
+    .head .container{
+        padding: 0;
+    }
+    .head .header .container{
+        padding: 0px 15px;
+    }
+    .products .col-6{
+        @include fb(100%)
+    }
+    div.appmobile{
+        padding-top: 251px;
+        padding-bottom: 40px;
+    }
+    div.appmobile__title{
+            text-align: center;
+    }
+    .appmobile__links{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    img.appmobile__img{
+        bottom: unset;
+        right: -144px;
+        top: -121px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 72%;
+    }
+    div.appmobile__box{
+        padding-top: 78px;
+    }
+    img.appmobile__line{
+        right: 0;
+        left: 0;
+        top: 68px;
+        width: 70%;
+        bottom: unset;
+    }
+    
 }
+
+
+
+
 @media (max-width:425px) {
     
 }

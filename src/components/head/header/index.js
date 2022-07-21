@@ -7,7 +7,7 @@ const Header = () => {
             <div className="container">
                 <a href="#"><img src={logo} /></a>
                 <ul className="header__menu">
-                    <li><a href="#">Menu</a></li>
+                    <li><a href="/menu">Menu</a></li>
                     <li><a href="#">Bolalar uchun</a></li>
                     <li><a href="#">Filiallar</a></li>
                 </ul>
