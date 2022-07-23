@@ -6,6 +6,9 @@ const Header = () => {
         <header className="header">
             <div className="container">
                 <a href="#"><img src={logo} /></a>
+                <b className="header__mobile">
+                    <img src={require('../../../assets/img/menu.png')} alt="" />
+                </b>
                 <ul className="header__menu">
                     <li><a href="/menu">Menu</a></li>
                     <li><a href="#">Bolalar uchun</a></li>

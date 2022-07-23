@@ -6,6 +6,7 @@
     .row{
         margin: unset;
     }
+   
     .head .container .bigburger {
     right: -11%;
     width: 69%;
@@ -55,6 +56,13 @@ img.appmobile__img {
         flex-direction: column-reverse;
         align-items: center;
         text-align: center;
+    }
+    .header{
+        .header__mobile{
+            display: inline-block;
+            margin-left: auto;
+            width: 15px;
+        }
     }
     ul.header__menu,
     div.header__contact{
@@ -126,9 +134,10 @@ img.appmobile__img {
                 overflow: hidden;
             }
             .footer__title{
-                background-color: rgb(203, 203, 203);
+                background-color: #F1F1F1;
                 padding: 14px 0px;
                 border-radius: 20px;
+                position: relative;
                 &::after{
                     content: '';
                     width:14px;
@@ -137,18 +146,35 @@ img.appmobile__img {
                     @include bg();
                     display: inline-block;
                     right: 38px;
-                    position: absolute;
-                    right: 38px;
                     top: 0;
                     bottom: 0;
                     margin: auto;
-
+                    position: absolute;
                 }
             }
         }
     
         .footer__contact{
             margin-left: unset;
+            @include fb(unset);
+            .footer__title{
+                display: none;
+            }
+        }
+        .footer__bottom{
+            bottom: 0;
+            flex-direction: column-reverse;
+            margin-top: 0;
+            align-items: center;
+            img{
+                height: 39px;
+            }
+            a{
+                margin: 0px 20px;
+            }
+            .footer__social{
+                margin: 0;
+            }
         }
     }
     
@@ -157,11 +183,87 @@ img.appmobile__img {
 
 
 
-@media (max-width:425px) {
-    
+@media (max-width:430px) {
+    div.headleft{
+        .row{
+            .col-6{
+                @include fb(100%)
+            }
+        }
+    }
+    div.headleft p {
+    font-size: 16px;
+    margin-bottom: 0px;
+    margin-top: 12px;
+    }
+    div.headleft__title {
+    font-size: 36px;
+    font-weight: 900;
+    }
+    div.headleft{
+        padding-top: 60px;
+        flex-basis: 0%;
+    }
+    img.appmobile__img {
+    top: -91px;
+    width: 100%;
+    }
+    div.appmobile__links a{
+        margin-right: 0;
+        margin-bottom: 12px;
+        @include fb(100%);
+        display: flex;
+        align-items:center;
+        justify-content: center;
+    }
+    div.appmobile__title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 24px;
+}
+    div.headleft__box {
+    padding: 167px 70px 37px;
+    }
+    .head .container .bigburger {
+    right: -11%;
+    width: 85%;
+}
+    div.product{
+        padding: 15px;
+        align-items: center;
+        .product__title{
+            font-size: 18px;
+        }
+        div.product__text {
+            opacity: 0.4;
+            font-size: 12px;
+            margin-bottom: 17px;
+        }
+        .product__price {
+            font-size: 18px;
+            }
+            .product__card {
+            width: 35px;
+            height: 35px;
+}
+        div.product__img{
+            img{
+                @include fb(127px);
+
+            }
+            div.product__status {
+                width: 35px;
+                height: 35px;
+            }
+            .product__info{
+                @include fb(calc(100%-121px))
+            }
+            
+        }
+    }
 }
 
 @media (max-width:375px) {
-    
 }
 

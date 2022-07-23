@@ -4,6 +4,9 @@
         display: flex;
         align-items: center;
     }
+    &__mobile{
+        display: none;
+    }
     &__menu{
         display: flex;
         align-items: center;
